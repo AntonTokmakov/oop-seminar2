@@ -18,10 +18,10 @@ public class Main {
         pharmancyComponents.add(water);
         pharmancyComponents.add(pinicilin);
 
-        System.out.println(pharmancyComponents);
+        //System.out.println(pharmancyComponents);
 
         Collections.sort(pharmancyComponents);
-        System.out.println(pharmancyComponents);
+        //System.out.println(pharmancyComponents);
 
         Pharmacy pharmacy1 = new Pharmacy().addComponent(azitroment).addComponent(water);
         Pharmacy pharmacy2 = new Pharmacy().addComponent(pinicilin).addComponent(water);
@@ -40,8 +40,8 @@ public class Main {
         set.add(azitroment1);
         set.add(azitroment);
 
-        System.out.println("/////////////////////////");
-        System.out.println(set);
+        //System.out.println("/////////////////////////");
+        //System.out.println(set);
 
         //Collections.sort(pharmacies, new );
 
