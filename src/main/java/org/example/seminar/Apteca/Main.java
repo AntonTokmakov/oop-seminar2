@@ -24,27 +24,43 @@ public class Main {
         //System.out.println(pharmancyComponents);
 
         Pharmacy pharmacy1 = new Pharmacy().addComponent(azitroment).addComponent(water);
-        Pharmacy pharmacy2 = new Pharmacy().addComponent(pinicilin).addComponent(water);
+        Pharmacy pharmacy2 = new Pharmacy().addComponent(pinicilin).addComponent(pinicilin).addComponent(water2).addComponent(water);
+        Pharmacy pharmacy3 = new Pharmacy().addComponent(water).addComponent(azitroment).addComponent(pinicilin);
+        Pharmacy pharmacy4 = new Pharmacy().addComponent(water).addComponent(azitroment).addComponent(pinicilin);
 
-        for (PharmancyComponent comp: pharmacy1) {
-            System.out.println(comp.getName());
-        }
 
-        List<Pharmacy> pharmacies = new ArrayList<>();
+        Set<Pharmacy> pharmacies = new HashSet<>();
         pharmacies.add(pharmacy1);
         pharmacies.add(pharmacy2);
+        pharmacies.add(pharmacy3);
+        pharmacies.add(pharmacy4);
 
+        System.out.println("////Вывод Set. В Set добавлено 4 элемента, один дубль");
+        System.out.println("Количество уникальных элементов Set: " + pharmacies.size());
+
+        List<Pharmacy> pharmaciesList = new ArrayList<>();
+        pharmaciesList.add(pharmacy1);
+        pharmaciesList.add(pharmacy2);
+        pharmaciesList.add(pharmacy3);
+
+        System.out.println("Сортировка происходит по кол-ву компонентов в таблетке");
+        System.out.println("///////////Вывод не отсортированного массива таблеток/////////////");
+        System.out.println(pharmaciesList);
+
+        Collections.sort(pharmaciesList);
+
+        System.out.println("///////////Вывод отсортированного массива таблеток/////////////");
+        System.out.println(pharmaciesList);
 
         Set<PharmancyComponent> set = new HashSet<>();
         set.add(azitroment);
         set.add(azitroment1);
         set.add(azitroment);
 
-        //System.out.println("/////////////////////////");
-        //System.out.println(set);
+//        System.out.println("/////////////////////////");
+//        System.out.println(set);
 
         //Collections.sort(pharmacies, new );
-
 
         //Iterator<PharmancyComponent> iterator = pharmacy1;
 

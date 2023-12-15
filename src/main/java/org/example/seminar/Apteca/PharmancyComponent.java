@@ -6,9 +6,6 @@ public class PharmancyComponent implements Comparable<PharmancyComponent> {
     private String weight;
     private int power;
 
-
-
-
     public PharmancyComponent(String name, String weight, int power) {
         this.name = name;
         this.weight = weight;
@@ -39,14 +36,14 @@ public class PharmancyComponent implements Comparable<PharmancyComponent> {
         this.power = power;
     }
 
-    @Override
-    public String toString() {
-        return "PharmancyComponent{" +
-                "name='" + name + '\'' +
-                ", weight='" + weight + '\'' +
-                ", power=" + power +
-                '}';
-    }
+//    @Override
+//    public String toString() {
+//        return "PharmancyComponent{" +
+//                "name='" + name + '\'' +
+//                ", weight='" + weight + '\'' +
+//                ", power=" + power +
+//                '}';
+//    }
 
     @Override
     public int compareTo(PharmancyComponent o) {
