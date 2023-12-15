@@ -52,25 +52,5 @@ public class Main {
         System.out.println("///////////Вывод отсортированного массива таблеток/////////////");
         System.out.println(pharmaciesList);
 
-        Set<PharmancyComponent> set = new HashSet<>();
-        set.add(azitroment);
-        set.add(azitroment1);
-        set.add(azitroment);
-
-//        System.out.println("/////////////////////////");
-//        System.out.println(set);
-
-        //Collections.sort(pharmacies, new );
-
-        //Iterator<PharmancyComponent> iterator = pharmacy1;
-
-//        while (iterator.hasNext()){
-//            System.out.println(iterator.next());
-//        }
-
-//        while (((Iterator<PharmancyComponent>) pharmacy1).hasNext()) {
-//            System.out.println(((Iterator<PharmancyComponent>) pharmacy1).next());
-//        }
-
     }
 }
